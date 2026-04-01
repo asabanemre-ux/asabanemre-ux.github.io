@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emre'nin Teknoloji Dünyası</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #1e293b;
+            --light: #f8fafc;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--light); margin: 0; color: var(--dark); }
+        header { background: var(--dark); color: white; padding: 2rem; text-align: center; }
+        .container { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+        .card { background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 1.5rem; }
+        h2 { color: var(--primary); border-bottom: 2px solid var(--primary); padding-bottom: 5px; }
+        .badge { background: #dbeafe; color: #1e40af; padding: 5px 12px; border-radius: 15px; font-size: 0.9rem; margin-right: 5px; display: inline-block; }
+        .project-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        @media (max-width: 600px) { .project-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Emre'nin Dijital Atölyesi</h1>
+    <p>Robotik, Donanım ve Oyun Dünyası Üzerine Çalışmalar</p>
+</header>
+
+<div class="container">
+    <section class="card">
+        <h2>Hakkımda</h2>
+        <p>Merhaba! Ben Emre. Teknolojiye ve cihazların nasıl çalıştığını anlamaya meraklı bir öğrenciyim. Boş zamanlarımda devreler kuruyor, eski cihazları hayata döndürüyor ve oyun mekanikleri üzerine denemeler yapıyorum.</p>
+    </section>
+
+    <section class="card">
+        <h2>Yetenekler & İlgi Alanları</h2>
+        <span class="badge">Arduino & Robotik</span>
+        <span class="badge">Elektronik Tamir</span>
+        <span class="badge">Oyun Geliştirme</span>
+        <span class="badge">Android Sistemler</span>
+    </section>
+
+    <section class="card">
+        <h2>Projelerim</h2>
+        <div class="project-grid">
+            <div style="border: 1px solid #ddd; padding: 10px; border-radius: 8px;">
+                <h4>🤖 Akıllı Ev Modeli</h4>
+                <p>Sensörler ve kontrol sistemleri kullanarak geliştirdiğim maket ev projesi.</p>
+            </div>
+            <div style="border: 1px solid #ddd; padding: 10px; border-radius: 8px;">
+                <h4>🚗 Bluetooth Kontrollü Araç</h4>
+                <p>Kendi yaptığım şasi ve kodlarla uzaktan kontrol edilen robot araba.</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer style="text-align: center; padding: 2rem; color: #666;">
+    <p>&copy; 2026 - Emre Tarafından Hazırlandı</p>
+</footer>
+
+</body>
+</html>
